@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* General layout */
+main {
+  padding: 40px 60px;
+  background-color: #f7f7f7;
+}
+
+main h1 {
+  font-size: 2.8rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 900px;
+}
+
+/* Optional: Product Highlights or Section Grid */
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.section-box {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.section-box:hover {
+  transform: translateY(-5px);
+}
+
+.section-box h3 {
+  margin-top: 0;
+  color: #111;
+}
+
+.section-box p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Optional: Call to Action Section */
+.call-to-action {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.call-to-action h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.call-to-action button {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.call-to-action button:hover {
+  background-color: #333;
+}

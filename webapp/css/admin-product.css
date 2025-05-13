@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* Layout Container */
+.container {
+  display: flex;
+}
+
+/* Main Content */
+.main-content {
+
+  padding: 20px;
+  flex: 1;
+}
+.inventory-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .inventory-header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .add-button {
+      padding: 10px 16px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .add-button:hover {
+      background-color: #333333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #f4f4f4;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #cccccc;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    th {
+      background-color: #e6e6e6;
+      font-weight: bold;
+    }
+
+    td img {
+      max-width: 100px;
+      height: auto;
+    }
+
+    .action-buttons button {
+      padding: 6px 12px;
+      margin: 2px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .update-btn {
+      background-color: #007bff;
+    }
+
+    .update-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .delete-btn {
+      background-color: #dc3545;
+    }
+
+    .delete-btn:hover {
+      background-color: #c82333;
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: #ffffff;
+      margin: 5% auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      width: 400px;
+      color: #000000;
+      border-radius: 8px;
+    }
+
+    .modal-content h2 {
+      margin-top: 0;
+    }
+
+    .modal-content input,
+    .modal-content textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .modal-content input[type="file"] {
+      padding: 4px;
+    }
+
+    .close {
+      color: #999;
+      float: right;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #000;
+    }

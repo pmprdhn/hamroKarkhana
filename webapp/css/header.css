@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* header.css */
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+}
+
+header {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 2px solid #ccc;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+    color: inherit;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+.logo-container img {
+  height: 90px;
+  margin-right: 20px;
+}
+
+.logo-container h1 {
+  font-size: 2.4em;
+  margin: 0;
+  color: #000;
+}
+
+.navbar {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #555;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.auth-buttons .login-btn,
+.auth-buttons .signup-btn {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.auth-buttons .login-btn:hover,
+.auth-buttons .signup-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.logo img {
+  height: 60px; /* was 40px */
+  margin-right: 20px;
+}
+
+main h1 {
+  font-size: 2.5rem; /* smaller than before */
+  margin-bottom: 10px;
+}
+
+/*After session*/
+
+.admin-profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-info-click {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.admin-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.admin-info {
+  display: flex;
+  flex-direction: column; /* ✅ stack name and role vertically */
+  align-items: flex-start; /* ✅ align text to start (left) */
+}
+
+.admin-name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    margin:0;
+}
+
+
+
+.admin-role {
+  font-size: 12px;
+  color: gray;
+  line-height: 1.2;
+  margin:0;
+}
+
+
+/* Dropdown styles */
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 120px;
+  display: none; /* Hide by default */
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
