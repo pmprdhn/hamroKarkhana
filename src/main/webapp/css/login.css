@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 100px;
+  height: 100%;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  gap: 30px;
+  text-align: center;
+}
+
+
+.logo-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.logo-img {
+  width: 260px;
+  height: auto;
+}
+
+.brand {
+  font-size: 40px;
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 60px;
+  vertical-align:centre;
+}
+
+
+.tagline {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.3;
+  padding-left: 0;
+}
+
+.slogan {
+  font-size: 22px;
+  margin-bottom: 80px;
+  padding-left: 0;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 60px;
+  border: 2px solid #000;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+  border: 1px solid #9e9fa0;
+  padding: 80px 60px;
+}
+
+.login-form label {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #000;
+  font-size: 18px;
+}
+
+.login-form input {
+  padding: 16px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000;
+  font-size: 17px;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.form-footer a:hover {
+  color: #555;
+}
+
+.form-footer a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.login-form button {
+  margin-top: 36px;
+  padding: 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-form button:hover {
+  background-color: #333;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 16px;
+}
+
+.register-link a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.register-link a:hover {
+  color: #555; /* soft gray on hover */
+}

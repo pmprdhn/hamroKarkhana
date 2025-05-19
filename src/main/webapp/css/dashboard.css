@@ -1,0 +1,129 @@
+/* Universal Settings */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Admin Container */
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Main Content Area */
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+/* Dashboard Header */
+.dashboard-header h1 {
+  font-size: 2.2rem;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-header p {
+  color: #444;
+  font-style: italic;
+}
+
+/* Cards Grid */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.card p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Low Stock Section */
+.low-stock {
+  margin-top: 2rem;
+}
+
+.low-stock h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+/* Table Styles */
+.low-stock table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.low-stock thead {
+  background-color: #eaeaea;
+}
+
+.low-stock th,
+.low-stock td {
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.low-stock th {
+  font-weight: bold;
+  color: #222;
+}
+
+.low-stock td {
+  color: #333;
+}
+
+.low-stock tbody tr:hover {
+  background-color: #f2f2f2;
+  transition: background-color 0.2s ease;
+}
+
+.low-stock td[colspan] {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+}
